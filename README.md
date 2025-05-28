@@ -27,7 +27,7 @@ git clone https://github.com/DevMohamedEmad/scheduler.git
 cd scheduler
 ```
 
-### 1. Run this commands
+### 2. Run this commands in your terminal
 
 ```bash
 composer update
