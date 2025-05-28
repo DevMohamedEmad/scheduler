@@ -26,3 +26,8 @@ Follow these steps to install and run the project locally.
 git clone https://github.com/DevMohamedEmad/scheduler.git
 cd scheduler
 
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/DevMohamedEmad/scheduler.git
+cd scheduler
