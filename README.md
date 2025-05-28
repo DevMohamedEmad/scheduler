@@ -32,7 +32,7 @@ cd scheduler
 
 ```bash
 composer update
-cp .env.example .env () 
+cp .env.example .env
 php artisan key:generate
 php artisan migrate:fresh --seed
 npm run dev
@@ -40,6 +40,7 @@ php artisan serve
 ```
 ### don't forget to update the section in .env file 
 
+```
 from : 
 "DB_CONNECTION=sqlite"
 "# DB_HOST=127.0.0.1"
@@ -47,7 +48,8 @@ from :
 "# DB_DATABASE=laravel"
 "# DB_USERNAME=root"
 "# DB_PASSWORD="
-
+```
+```
 to :
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -55,3 +57,4 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=root
+```
