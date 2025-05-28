@@ -59,7 +59,7 @@ class UpdatePostRequest extends FormRequest
 
                 $platforms = Platform::whereIn('id', $this->platform_ids)->get();
 
-                if ($this->checkImageIsRequiredForPlatforms($platforms) && !$this->hasFile('image') && !$post->image) {
+                if ($this->checkImageIsRequiredForPlatforms($platforms) && !$this->hasFile('image') && !$post->image_url) {
                     $validator->errors()->add('image', 'Image is required for the selected platform(s).');
                 }
 
