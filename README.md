@@ -13,6 +13,7 @@ A Laravel-based web application for managing platforms associated with users. In
 - Sync platforms to users using modals
 - Filter posts by status and scheduled date
 - Bootstrap 5 UI
+- Allow to user to post only 10 posts per day
 
 ---
 
@@ -31,8 +32,26 @@ cd scheduler
 
 ```bash
 composer update
+cp .env.example .env () 
 php artisan key:generate
 php artisan migrate:fresh --seed
 npm run dev
 php artisan serve
 ```
+### don't forget to update the section in .env file 
+
+from : 
+DB_CONNECTION=sqlite
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=laravel
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+to :
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=root
