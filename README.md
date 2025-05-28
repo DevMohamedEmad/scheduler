@@ -41,12 +41,12 @@ php artisan serve
 ### don't forget to update the section in .env file 
 
 from : 
-DB_CONNECTION=sqlite
-# DB_HOST=127.0.0.1
-# DB_PORT=3306
-# DB_DATABASE=laravel
-# DB_USERNAME=root
-# DB_PASSWORD=
+"DB_CONNECTION=sqlite"
+"# DB_HOST=127.0.0.1"
+"# DB_PORT=3306"
+"# DB_DATABASE=laravel"
+"# DB_USERNAME=root"
+"# DB_PASSWORD="
 
 to :
 DB_CONNECTION=mysql
