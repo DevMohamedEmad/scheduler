@@ -25,9 +25,14 @@ Follow these steps to install and run the project locally.
 ```bash
 git clone https://github.com/DevMohamedEmad/scheduler.git
 cd scheduler
+```
 
-### 1. Clone the repository
+### 1. Run this commands
 
 ```bash
-git clone https://github.com/DevMohamedEmad/scheduler.git
-cd scheduler
+composer update
+php artisan key:generate
+php artisan migrate:fresh --seed
+npm run dev
+php artisan serve
+```
